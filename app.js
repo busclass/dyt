@@ -4,15 +4,18 @@ const wss = new WebSocketServer({
 });
 
 wss.on("connection", function connection(ws) {
-    console.log("客户端连接成功");
+    console.log("???客户端连接成功");
     ws.on("message", function message(data) {
         let message = JSON.parse(data.toString())
+        console.log(message)
         switch (message.action) {
             case 'message':
-                console.log(getTime(), message.message.user_nickName + ':' + message.message.msg_content)
+                console.log("???????????",getTime(), message.message.user_nickName + ':' + message.message.msg_content)
                 break
             case 'join':
-                console.log(getTime(), message.message.user_nickName + ':' + message.message.msg_content)
+                console.log("!!!!!!!!!!!",getTime(), message.message.user_nickName + ':' + message.message.msg_content)
+                break
+            case 'getmsg':
                 break
         }
         wss.clients.forEach(cen => {
