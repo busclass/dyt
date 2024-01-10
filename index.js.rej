@@ -1,0 +1,9 @@
+diff a/index.js b/index.js	(rejected hunks)
+@@ -165,6 +165,7 @@
+                     gift_name: msg.gift.name,
+                     // gift_number: parseInt(msg.comboCount),
+                     gift_number: parseInt(msg.repeatCount),
++                 //   gift_image: msg.gift.icon.urlListList[0],
+                     gift_diamondCount: msg.gift.diamondCount,
+                     gift_describe: msg.gift.describe,
+                 })
