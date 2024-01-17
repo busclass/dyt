@@ -158,7 +158,7 @@ const Barrage = class {
             case 'WebcastGiftMessage':
                 console.log(msg)
                 result = Object.assign(result, {
-                    // repeatCount: parseInt(),
+                    repeatCount: parseInt(msg.repeat_count),
                     msg_content: msg.common.describe,
                     isGift: true,
                     gift_id: msg.gift.id,

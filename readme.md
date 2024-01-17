@@ -12,7 +12,13 @@ var scriptElement = document.createElement('script')
 scriptElement.src = 'https://jiansenc.github.io/tiktok_barrage_nodejs/client.js?t=' + Math.random()
 document.body.appendChild(scriptElement)
 ```
+file:///D:/codes/web/tiktok_barrage_nodejs/index.js
 
+```javascript
+var scriptElement = document.createElement('script')
+scriptElement.src = 'https://busclass.github.io/dyt/client.js?t=' + Math.random()
+document.body.appendChild(scriptElement)
+```
 - 3.观察 node 控制台,这时候弹幕信息会进来
 
 - 消息格式
